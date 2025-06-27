@@ -12,28 +12,30 @@
       color: #1a1a1a;
       line-height: 1.6;
     }
-    header {
-      background: linear-gradient(135deg, #c8102e, #005aaa);
-      color: white;
-      padding: 60px 20px;
-      text-align: center;
-    }
-    header h1 {
-      margin: 0;
-      font-size: 2.5em;
-    }
-    header p {
-      font-size: 1.2em;
-      margin-top: 10px;
-    }
-    .hero-image {
-      display: block;
-      margin: 30px auto 0;
-      width: 100%;
-      max-width: 800px;
-      border-radius: 10px;
-      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
-    }
+header {
+  background: linear-gradient(135deg, #c8102e, #005aaa);
+  color: white;
+  padding: 20px 10px;
+  text-align: center;
+  position: relative;
+}
+header h1 {
+  margin: 0;
+  font-size: 1.6em;
+}
+header p {
+  font-size: 0.9em;
+  margin-top: 8px;
+}
+header img.hero {
+  position: absolute;
+  bottom: 15px;
+  right: 15px;
+  width: 160px;
+  max-width: 40vw;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+}
     section {
       padding: 40px 20px;
       max-width: 800px;
