@@ -1,10 +1,13 @@
 <!DOCTYPE html>
 <html lang="de">
+  
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Talentförderung Marius Bauer</title>
+
   <style>
+    /* Grunddesign */
     body {
       margin: 0;
       font-family: 'Segoe UI', sans-serif;
@@ -13,6 +16,7 @@
       line-height: 1.6;
     }
 
+    /* Headerbild (Banner) */
     header img {
       width: 100%;
       height: auto;
@@ -21,28 +25,71 @@
       padding: 0;
     }
 
+    /* Navigation & Hamburger */
     nav {
       background: #f4f4f4;
-      padding: 15px 0;
-      text-align: center;
+      padding: 0;
       position: sticky;
       top: 0;
       z-index: 1000;
       box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
     }
 
-    nav a {
-      margin: 0 20px;
+    .hamburger {
+      font-size: 28px;
+      padding: 15px 20px;
+      cursor: pointer;
+      text-align: right;
+      display: flex;
+      justify-content: flex-end;
+    }
+
+    .nav-links {
+      display: none;
+      flex-direction: column;
+      align-items: center;
+      background: #f4f4f4;
+    }
+
+    .nav-links a {
+      padding: 10px 0;
       text-decoration: none;
       color: #005aaa;
       font-weight: bold;
       font-size: 1rem;
+      width: 100%;
+      text-align: center;
     }
 
-    nav a:hover {
+    .nav-links a:hover {
+      background: #ddd;
       color: #c8102e;
     }
 
+    .show {
+      display: flex !important;
+    }
+
+    /* Desktop-Version */
+    @media (min-width: 800px) {
+      .hamburger {
+        display: none;
+      }
+
+      .nav-links {
+        display: flex !important;
+        flex-direction: row;
+        justify-content: center;
+        background: none;
+      }
+
+      .nav-links a {
+        padding: 15px 20px;
+        width: auto;
+      }
+    }
+
+    /* Bilder */
     .startbild {
       display: block;
       max-width: 90%;
@@ -66,6 +113,7 @@
       }
     }
 
+    /* Struktur */
     section {
       padding: 40px 20px;
       max-width: 800px;
@@ -92,6 +140,7 @@
     <img src="Banner2_Webseite.png" alt="Banner Talentförderung Marius Bauer" />
   </header>
 
+  <!-- HIER kommt die Navigation rein -->
   <nav>
     <div class="hamburger" onclick="toggleMenu()">☰</div>
     <div class="nav-links" id="navLinks">
