@@ -2,10 +2,9 @@
 <html lang="de">
   
 <head>
-  <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Talentförderung Marius Bauer</title>
-
   <style>
     /* Grunddesign */
     body {
@@ -16,7 +15,7 @@
       line-height: 1.6;
     }
 
-    /* Headerbild (Banner) */
+    /* Header-Bild (Banner) */
     header img {
       width: 100%;
       height: auto;
@@ -25,52 +24,60 @@
       padding: 0;
     }
 
-    /* Navigation & Hamburger */
-    nav {
+    /* Navigation allgemein */
+    .topnav {
       background: #f4f4f4;
-      padding: 0;
+      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
       position: sticky;
       top: 0;
-      z-index: 1000;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      z-index: 999;
+    }
+
+    .nav-container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 15px 20px;
+    }
+
+    .logo {
+      font-size: 1.2rem;
+      font-weight: bold;
+      color: #005aaa;
     }
 
     .hamburger {
       font-size: 28px;
-      padding: 15px 20px;
       cursor: pointer;
-      text-align: right;
-      display: flex;
-      justify-content: flex-end;
+      display: block;
     }
 
     .nav-links {
       display: none;
       flex-direction: column;
-      align-items: center;
-      background: #f4f4f4;
+      text-align: center;
+      background-color: #f4f4f4;
+      padding-bottom: 10px;
     }
 
     .nav-links a {
-      padding: 10px 0;
+      padding: 10px;
       text-decoration: none;
       color: #005aaa;
       font-weight: bold;
-      font-size: 1rem;
-      width: 100%;
-      text-align: center;
+      display: block;
     }
 
     .nav-links a:hover {
-      background: #ddd;
+      background-color: #ddd;
       color: #c8102e;
     }
 
-    .show {
-      display: flex !important;
+    .nav-links.show {
+      display: flex;
     }
 
-    /* Desktop-Version */
+    /* Desktop-Modus */
     @media (min-width: 800px) {
       .hamburger {
         display: none;
@@ -81,15 +88,15 @@
         flex-direction: row;
         justify-content: center;
         background: none;
+        padding: 0;
       }
 
       .nav-links a {
         padding: 15px 20px;
-        width: auto;
       }
     }
 
-    /* Bilder */
+    /* Bild- und Abschnittsdesign */
     .startbild {
       display: block;
       max-width: 90%;
@@ -107,13 +114,6 @@
       height: auto;
     }
 
-    @media (min-width: 800px) {
-      .startbild {
-        max-width: 60%;
-      }
-    }
-
-    /* Struktur */
     section {
       padding: 40px 20px;
       max-width: 800px;
@@ -136,20 +136,31 @@
   
 <body>
 
-  <header>
-    <img src="Banner2_Webseite.png" alt="Banner Talentförderung Marius Bauer" />
-  </header>
-
-  <!-- HIER kommt die Navigation rein -->
-  <nav>
-    <div class="hamburger" onclick="toggleMenu()">☰</div>
-    <div class="nav-links" id="navLinks">
+  <!-- Navigationsleiste mit Hamburger-Menü -->
+  <nav class="topnav">
+    <div class="nav-container">
+      <div class="logo">TalentMB</div>
+      <div class="hamburger" onclick="toggleMenu()">☰</div>
+    </div>
+    <div id="navLinks" class="nav-links">
       <a href="#wasdicherwartet">Was dich erwartet</a>
       <a href="#uebermich">Über mich</a>
       <a href="#konditionen">Konditionen</a>
       <a href="#buchung">Buchung</a>
     </div>
   </nav>
+
+  <!-- Bannerbild -->
+  <header>
+    <img src="Banner2_Webseite.png" alt="Banner Talentförderung Marius Bauer">
+  </header>
+
+  <script>
+    function toggleMenu() {
+      const nav = document.getElementById("navLinks");
+      nav.classList.toggle("show");
+    }
+  </script>
   
  <section id="wasdicherwartet">
     <h2>Was dich erwartet</h2>
