@@ -16,7 +16,9 @@
 
     .header-image {
       width: 100%;
+      height: auto;
       display: block;
+      max-width: 100%;
     }
 
     .container {
@@ -26,16 +28,47 @@
     }
 
     h2 {
-      color: #d60000; /* Rot für "Was dich erwartet" */
+      color: #d60000; /* Rot für Kapitelüberschriften */
       margin-top: 40px;
     }
 
     h3 {
       color: #000;
+      margin-top: 30px;
     }
 
     p {
       margin-bottom: 15px;
+    }
+
+    ul {
+      padding-left: 20px;
+      margin-bottom: 20px;
+    }
+
+    strong {
+      color: #000;
+    }
+
+    .highlight {
+      background-color: #f5f5f5;
+      padding: 10px 15px;
+      border-left: 4px solid #d60000;
+      margin: 20px 0;
+    }
+
+    @media (max-width: 600px) {
+      body {
+        font-size: 16px;
+      }
+
+      .container {
+        padding: 15px;
+      }
+
+      h2, h3 {
+        font-size: 1.2em;
+      }
     }
   </style>
 </head>
