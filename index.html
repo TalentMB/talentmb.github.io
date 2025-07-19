@@ -77,6 +77,46 @@
       margin: 20px 0;
     }
 
+    .carousel-container {
+      position: relative;
+      max-width: 1000px;
+      margin: 40px auto;
+      overflow: hidden;
+      border-radius: 10px;
+    }
+
+    .carousel-slide {
+      display: flex;
+      transition: transform 0.5s ease-in-out;
+    }
+
+    .carousel-slide img {
+      width: 100%;
+      flex-shrink: 0;
+      object-fit: contain;
+      border-radius: 10px;
+    }
+
+    .carousel-button {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      background-color: rgba(255, 255, 255, 0.8);
+      border: none;
+      font-size: 2rem;
+      cursor: pointer;
+      padding: 0 12px;
+      z-index: 10;
+    }
+
+    .carousel-button.prev {
+      left: 10px;
+    }
+
+    .carousel-button.next {
+      right: 10px;
+    }
+
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -100,6 +140,17 @@
   </header>
 
   <div class="container">
+    <!-- Karussell -->
+    <div class="carousel-container">
+      <button class="carousel-button prev" onclick="moveSlide(-1)">‹</button>
+      <div class="carousel-slide" id="carouselSlide">
+        <img src="Bestehen mit Toni Chemie, Statistik, Strom.png" alt="Bestehen mit Toni">
+        <img src="ChatGPT Image 11. Juli 2025, 15_25_30-Photoroom.png" alt="Optimale Bestellmenge">
+        <img src="Tim SI-Einheiten.png" alt="SI-Einheiten">
+      </div>
+      <button class="carousel-button next" onclick="moveSlide(1)">›</button>
+    </div>
+
     <!-- Einstieg -->
     <section>
       <h3>Du kämpfst mit NTG oder HQ?</h3>
@@ -156,14 +207,10 @@
       <h2>Über mich</h2>
       <p>Ich bin Marius Bauer, 31 Jahre alt, habe Physik, Maschinenbau und Energietechnik in 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich Wasserstofftechnologien.</p>
       <p>Ich unterrichte seit 15 Jahren und habe in den letzten drei Jahren über 80 Industriemeister erfolgreich vorbereitet (Metall, Elektro, Logistik).</p>
-
       <h3>Deutung meines Logos</h3>
       <p>In meinem Logo stecken die drei großen Grundsäulen meiner akademischen Ausbildung</p>
       <img src="Logo.png" alt="NTG Marius Bauer" class="logo-image">
-      <p>Das Zentrum meines Logos zeigt ein großes Zahnrad, welches in drei Kleinere greift, diese wiederum übertragen ihre Kraft auf ein Hohlrad. Der Zusammenschluss dieser Zahnräder in der hier dargestellten Konfiguration ist ein Planetenradgetriebe, welches repräsentativ für mein Maschinenbau steht. An der Hochschule für Technik und Wirtschaft Aalen erlangte ich den dafür zugehörigen Titel Bachelor of Engineering.</p>
-      <p>Auf bestimmten Trajektorien kreisen Elektronen um das Planetenradgetriebe. Diese Atomhülle symbolisiert mein Studium der Physik, welches ich nach 5 Semestern an der Friedrich-Alexander-Universität Erlangen-Nürnberg mit dem Titel Bachelor of Science abschloss.</p>
-      <p>Innerhalb der Atomhülle und angeschlossen an das Planetenradgetriebe befinden sich 3 Schaufeln, welche eine Turbomaschine darstellen, die ein blaues Fluid befördert. Diese Turbomaschine steht für den Studiengang Energietechnik mit Schwerpunkt Verfahrenstechnik. Ebenfalls an der FAU Erlangen-Nürnberg schloss ich diesen Studiengang im Jahre 2021 mit sehr guten Leistungen und dem Titel Master of Science ab.</p>
-      <p>Aktuell promoviere ich im Fachbereich Chemie- und Bioingenieurwesen. Hier forsche ich im Bereich von Wasserstofftechnologien.</p>
+      <p>Das Zentrum meines Logos zeigt ein großes Zahnrad, welches in drei Kleinere greift, diese wiederum übertragen ihre Kraft auf ein Hohlrad. [...]</p>
     </section>
 
     <!-- Konditionen -->
@@ -180,10 +227,7 @@
     <!-- Buchung -->
     <section id="buchung">
       <h2>📅 Buchungskalender</h2>
-      <p>
-        Hier kannst du direkt einen Termin buchen:<br>
-        <strong>Samstag & Sonntag, 7:30 – 9:00 Uhr</strong>
-      </p>
+      <p>Hier kannst du direkt einen Termin buchen:<br><strong>Samstag & Sonntag, 7:30 – 9:00 Uhr</strong></p>
       <iframe 
         src="https://cal.com/talentmb/unterricht?locale=de"
         style="width: 100%; height: 100vh; border: none;"
@@ -192,12 +236,33 @@
       <p>Fragen? Schreib mir: <strong>info@TalentMB.de</strong></p>
     </section>
 
-    <!-- Footer mit externen Links -->
+    <!-- Footer -->
     <footer>
       &copy; 2025 TalentMB.de |
       <a href="impressum.html">Impressum</a> |
       <a href="datenschutz.html">Datenschutz</a>
     </footer>
   </div>
+
+  <!-- JavaScript für Karussell -->
+  <script>
+    let currentIndex = 0;
+    const slide = document.getElementById('carouselSlide');
+    const images = slide.querySelectorAll('img');
+
+    function moveSlide(direction) {
+      currentIndex = (currentIndex + direction + images.length) % images.length;
+      updateSlide();
+    }
+
+    function updateSlide() {
+      slide.style.transform = `translateX(-${currentIndex * 100}%)`;
+    }
+
+    // Automatisches Weiterschalten alle 5 Sekunden
+    setInterval(() => {
+      moveSlide(1);
+    }, 5000);
+  </script>
 </body>
 </html>
