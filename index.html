@@ -1,4 +1,4 @@
-<!DOCTYPE html>
+""<!DOCTYPE html>
 <html lang="de">
 <head>
   <meta charset="UTF-8">
@@ -74,6 +74,13 @@
         font-size: 1.2em;
       }
     }
+
+    .logo-image {
+      max-width: 100%;
+      height: auto;
+      display: block;
+      margin: 20px 0;
+    }
   </style>
 </head>
 
@@ -135,21 +142,19 @@
       <p><em>Das <strong>Telefon-Coaching</strong> ist kein klassischer Unterricht, sondern ein persönlicher Begleiter für deinen Lernprozess. Ideal, um fokussiert zu bleiben – mit System, Klarheit und menschlichem Austausch.</em></p>
     </section>
 
-    <!-- Über mich & Logo -->
-    <section>
-      <h2>Über mich & Logo</h2>
-      <p>Ich bin <strong>Marius Bauer</strong>, 31 Jahre alt, habe <strong>Physik, Maschinenbau und Energietechnik</strong> in insgesamt 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich <strong>Wasserstofftechnologien</strong>.</p>
-      <p>Ich unterrichte seit über <strong>15 Jahren</strong> und habe allein in den letzten drei Jahren über <strong>80 angehende Industriemeister</strong> (Metall, Elektro, Logistik) erfolgreich auf ihre Prüfungen vorbereitet – viele davon im allerletzten Versuch.</p>
+    <!-- Über mich -->
+    <section id="uebermich">
+      <h2>Über mich</h2>
+      <p>Ich bin Marius Bauer, 31 Jahre alt, habe Physik, Maschinenbau und Energietechnik in 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich Wasserstofftechnologien.</p>
+      <p>Ich unterrichte seit 15 Jahren und habe in den letzten drei Jahren über 80 Industriemeister erfolgreich vorbereitet (Metall, Elektro, Logistik).</p>
 
-      <div>
-        <p><strong>Mein Logo</strong> steht sinnbildlich für die drei großen Säulen meiner akademischen Ausbildung:</p>
-        <ul>
-          <li><strong>Das Zentrum:</strong> Ein großes Zahnrad treibt über drei kleinere Zahnräder ein Hohlrad an – ein <em>Planetenradgetriebe</em> als Symbol für mein Maschinenbaustudium (B.Eng., Hochschule Aalen).</li>
-          <li><strong>Darum kreisen Elektronen:</strong> Die Atomhülle steht für mein Physikstudium (B.Sc., FAU Erlangen-Nürnberg).</li>
-          <li><strong>In der Hülle:</strong> Drei Schaufeln einer Turbomaschine fördern ein blaues Fluid – Sinnbild für meinen Master in Energietechnik mit Schwerpunkt Verfahrenstechnik (M.Sc., FAU Erlangen-Nürnberg, 2021).</li>
-        </ul>
-        <p>Derzeit promoviere ich im Fachbereich <strong>Chemie- und Bioingenieurwesen</strong> mit dem Schwerpunkt <strong>Wasserstofftechnologien</strong>.</p>
-      </div>
+      <h3>Deutung meines Logos</h3>
+      <p>In meinem Logo stecken die drei großen Grundsäulen meiner akademischen Ausbildung</p>
+      <img src="Logo.png" alt="NTG Marius Bauer" class="logo-image">
+      <p>Das Zentrum meines Logos zeigt ein großes Zahnrad, welches in drei Kleinere greift, diese wiederum übertragen ihre Kraft auf ein Hohlrad. Der Zusammenschluss dieser Zahnräder in der hier dargestellten Konfiguration ist ein Planetenradgetriebe, welches repräsentativ für mein Maschinenbau steht. An der Hochschule für Technik und Wirtschaft Aalen erlangte ich den dafür zugehörigen Titel Bachelor of Engineering.</p>
+      <p>Auf bestimmten Trajektorien kreisen Elektronen um das Planetenradgetriebe. Diese Atomhülle symbolisiert mein Studium der Physik, welches ich nach 5 Semestern an der Friedrich-Alexander-Universität Erlangen-Nürnberg mit dem Titel Bachelor of Science abschloss.</p>
+      <p>Innerhalb der Atomhülle und angeschlossen an das Planetenradgetriebe befinden sich 3 Schaufeln, welche eine Turbomaschine darstellen, die ein blaues Fluid befördert. Diese Turbomaschine steht für den Studiengang Energietechnik mit Schwerpunkt Verfahrenstechnik. Ebenfalls an der FAU Erlangen-Nürnberg schloss ich diesen Studiengang im Jahre 2021 mit sehr guten Leistungen und dem Titel Master of Science ab.</p>
+      <p>Aktuell promoviere ich im Fachbereich Chemie- und Bioingenieurwesen. Hier forsche ich im Bereich von Wasserstofftechnologien.</p>
     </section>
 
     <!-- Konditionen -->
@@ -172,12 +177,12 @@
       </p>
       <iframe 
         src="https://cal.com/talentmb/unterricht" 
-        style="width: 100%; height: 700px; border: none;" 
+        style="width: 100%; height: 100vh; border: none;" 
         title="Buchungskalender">
       </iframe>
       <p>Fragen? Schreib mir: <strong>info@TalentMB.de</strong></p>
     </section>
-
+  </div>
 
   <!-- Footer mit externen Links -->
   <footer>
@@ -185,6 +190,5 @@
     <a href="impressum.html">Impressum</a> |
     <a href="datenschutz.html">Datenschutz</a>
   </footer>
-  </div>
 </body>
 </html>
