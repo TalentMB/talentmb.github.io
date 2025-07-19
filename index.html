@@ -1,135 +1,41 @@
 <!DOCTYPE html>
 <html lang="de">
-  
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>Talentförderung Marius Bauer</title>
   <style>
-    /* Grunddesign */
     body {
-      margin: 0;
-      font-family: 'Segoe UI', sans-serif;
-      background-color: #ffffff;
-      color: #1a1a1a;
+      font-family: Arial, sans-serif;
       line-height: 1.6;
-    }
-
-    /* Header-Bild (Banner) */
-    header img {
-      width: 100%;
-      height: auto;
-      display: block;
       margin: 0;
       padding: 0;
+      background-color: #fff;
+      color: #333;
     }
 
-    /* Navigation allgemein */
-    .topnav {
-      background: #f4f4f4;
-      box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-      position: sticky;
-      top: 0;
-      z-index: 999;
-    }
-
-    .nav-container {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      padding: 15px 20px;
-    }
-
-    .logo {
-      font-size: 1.2rem;
-      font-weight: bold;
-      color: #005aaa;
-    }
-
-    .hamburger {
-      font-size: 28px;
-      cursor: pointer;
+    .header-image {
+      width: 100%;
       display: block;
     }
 
-    .nav-links {
-      display: none;
-      flex-direction: column;
-      text-align: center;
-      background-color: #f4f4f4;
-      padding-bottom: 10px;
-    }
-
-    .nav-links a {
-      padding: 10px;
-      text-decoration: none;
-      color: #005aaa;
-      font-weight: bold;
-      display: block;
-    }
-
-    .nav-links a:hover {
-      background-color: #ddd;
-      color: #c8102e;
-    }
-
-    .nav-links.show {
-      display: flex;
-    }
-
-    /* Desktop-Modus */
-    @media (min-width: 800px) {
-      .hamburger {
-        display: none;
-      }
-
-      .nav-links {
-        display: flex !important;
-        flex-direction: row;
-        justify-content: center;
-        background: none;
-        padding: 0;
-      }
-
-      .nav-links a {
-        padding: 15px 20px;
-      }
-    }
-
-    /* Bild- und Abschnittsdesign */
-    .startbild {
-      display: block;
-      max-width: 90%;
-      height: auto;
-      margin: 30px auto 0;
-      border-radius: 12px;
-      box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
-    }
-
-    .logo-image {
-      display: block;
-      margin: 20px auto;
-      max-width: 300px;
-      max-height: 150px;
-      height: auto;
-    }
-
-    section {
-      padding: 40px 20px;
-      max-width: 800px;
-      margin: auto;
+    .container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 20px;
     }
 
     h2 {
-      color: #c8102e;
+      color: #d60000; /* Rot für "Was dich erwartet" */
+      margin-top: 40px;
     }
 
     h3 {
-      color: #005aaa;
+      color: #000;
     }
 
-    ul {
-      padding-left: 20px;
+    p {
+      margin-bottom: 15px;
     }
   </style>
 </head>
@@ -148,93 +54,16 @@
     }
   </script>
   
- <section id="wasdicherwartet">
+  <!-- Was dich erwartet -->
     <h2>Was dich erwartet</h2>
-    <p>Ob Chemie, Physik, Technik oder Statistik – hier findest du alle prüfungsrelevanten Themen aus dem Bereich Naturwissenschaftlich-Technische Grundlagen (NTG) verständlich erklärt. Ideal für deine mündliche Ergänzungsprüfung, insbesondere im letzten Versuch oder wenn du Unsicherheit in bestimmten Themengebieten spürst.</p>
-    <img src="Thumb Mündliche Prüfung mit Toni groß.png" alt="NTG Marius Bauer" class="startbild">
-    <h3>🔬 CHEMIE – Grundlagen und Reaktionen</h3>
-    <ul>
-      <li>Periodensystem & Hauptgruppen</li>
-      <li>Atommodelle & Elektronenkonfiguration</li>
-      <li>Aggregatzustände & Übergänge</li>
-      <li>Stoffeigenschaften & Stoffwerte</li>
-      <li>Säure-Base-Konzepte & pH-Wert</li>
-      <li>Redoxreaktionen</li>
-    </ul>
-
-    <h3>📐 PHYSIK & TECHNIK – Kräfte, Bewegung, Energie</h3>
-    <ul>
-      <li>Mechanik & Newtonsche Gesetze</li>
-      <li>Schiefe Ebene & Reibungskräfte</li>
-      <li>Energiearten & Energieerhaltung</li>
-      <li>Druck & Kraftübertragung</li>
-      <li>Technische Anwendungen</li>
-    </ul>
-
-    <h3>📊 STATISTIK – Messwerte & Auswertung</h3>
-    <ul>
-      <li>Arithmetischer Mittelwert</li>
-      <li>Modalwert & Median</li>
-      <li>Spannweite</li>
-      <li>Gaus’sche Normalverteilung</li>
-      <li>Interpretation in der Fertigung</li>
-      <li>Wahrscheinlichkeitsnetz (optional)</li>
-    </ul>
-
-    <h3>💡 PRÜFUNGSTIPPS & STRATEGIE</h3>
-    <ul>
-      <li>Visualisierung & Didaktik</li>
-      <li>Psychologische Wirkung</li>
-      <li>Zeitsouveränität & Flexibilität</li>
-      <li>Fehler vermeiden durch Klarheit</li>
-    </ul>
-
-    <p><strong>Diese Playlist hilft dir:</strong></p>
-    <ul>
-      <li>✔️ Einen roten Faden für dein Prüfungsgespräch zu entwickeln</li>
-      <li>✔️ Selbstbewusst und inhaltlich fundiert aufzutreten</li>
-      <li>✔️ Typische Fallstricke zu vermeiden</li>
-      <li>✔️ Dein Wissen aktiv anzuwenden – statt nur auswendig zu lernen</li>
-    </ul>
-
-    <p><strong>📚 Hinweis für Prüflinge im letzten Versuch:</strong><br>
-    Du bekommst hier nicht nur Inhalte, sondern auch das nötige Selbstvertrauen, um in der Prüfung ruhig zu bleiben und mit Struktur zu glänzen. Alles, was du brauchst, ist hier – kompakt, verständlich, machbar.</p>
-
-    <p>🔔 Abonniere den Kanal, wenn du die Prüfung endlich bestehen willst – mit einem guten Gefühl.</p>
-    <p>👷‍♂️ Industriemeister werden. Verstehen. Bestehen.<br>
-    📽️ Playlist: „NTG Mündliche Ergänzungsprüfung“</p>
-  </section>
-   
-  <section id="uebermich">
-    <h2>Über mich</h2>
-
-    <p>Ich bin Marius Bauer, 31 Jahre alt, habe Physik, Maschinenbau und Energietechnik in 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich Wasserstofftechnologien.</p>
-    <p>Ich unterrichte seit 15 Jahren und habe in den letzten drei Jahren über 80 Industriemeister erfolgreich vorbereitet (Metall, Elektro, Logistik).</p>
-    
-    <h3>Deutung meines Logos</h3>
-    <p>In meinem Logo stecken die drei großen Grundsäulen meiner akademischen Ausbildung:</p>
-    <img src="Logo.png" alt="NTG Marius Bauer" class="logo-image">
-    <p>Das Zentrum meines Logos zeigt ein großes Zahnrad, welches in drei Kleinere greift, diese wiederum übertragen ihre Kraft auf ein Hohlrad. Der Zusammenschluss dieser Zahnräder in der hier dargestellten Konfiguration ist ein Planetenradgetriebe, welches repräsentativ für mein Maschinenbau steht. An der Hochschule für Technik und Wirtschaft Aalen erlangte ich den dafür zugehörigen Titel Bachelor of Engineering.</p>
-    <p>Auf bestimmten Trajektorien kreisen Elektronen um das Planetenradgetriebe. Diese Atomhülle symbolisiert mein Studium der Physik, welches ich nach 5 Semestern an der Friedrich-Alexander-Universität Erlangen-Nürnberg mit dem Titel Bachelor of Science abschloss.</p>
-    <p>Innerhalb der Atomhülle und angeschlossen an das Planetenradgetriebe befinden sich 3 Schaufeln, welche eine Turbomaschine darstellen, die ein blaues Fluid befördert. Diese Turbomaschine steht für den Studiengang Energietechnik mit Schwerpunkt Verfahrenstechnik. Ebenfalls an der FAU Erlangen-Nürnberg schloss ich diesen Studiengang im Jahre 2021 mit sehr guten Leistungen und dem Titel Master of Science ab.</p>
-    <p>Aktuell promoviere ich im Fachbereich Chemie- und Bioingenieurwesen. Hier forsche ich im Bereich von Wasserstofftechnologien.</p>
-  </section>
-    
-  <section id="konditionen">
-    <h2>Konditionen</h2>
-    <ul>
-      <li>Gruppenunterricht: 40€/45 min pro Person</li>
-      <li>Einzelunterricht: 50€/45 min</li>
-      <li>Steuerlich absetzbar</li>
-    </ul>
-    <p><strong>Hinweis:</strong> Aufgrund meiner intensiven Arbeit an der Dissertation kann ich derzeit nur sehr wenige Unterrichtstermine anbieten. Fest geplante Kurse oder RuS-Pakete wird es erst wieder ab 2026 geben – dafür dann mit besonders attraktiven Konditionen.</p>
-    <p><strong>Stornierungsbedingungen:</strong></p>
-    <ul>
-      <li>Absage bis 48h vorher: kostenlos</li>
-      <li>Absage bis 24h vorher: 50% des Honorars</li>
-      <li>Weniger als 24h vorher: 100%, da der Termin nicht neu vergeben werden kann</li>
-    </ul>
-  </section>
+    <p>
+      ✅ Individueller Unterricht via Zoom – angepasst an dein Lerntempo<br>
+      ✅ Fokus auf NTG & HQ – inkl. mündlicher Ergänzungsprüfung<br>
+      ✅ Durchdachter didaktischer Aufbau mit Alltagsbezug<br>
+      ✅ Persönlich kuratierte Playlist mit über <strong>60 Stunden Lernvideos</strong><br>
+      ✅ Ergänzendes Lernen unterwegs mit meinem <strong>Spotify-Podcast</strong><br>
+      ✅ Kein Frontalunterricht – du bringst deine Fragen mit, <strong>wir lösen sie gemeinsam</strong>
+    </p>
 
   <section id="buchung">
   <h2>📅 Buchungskalender</h2>
