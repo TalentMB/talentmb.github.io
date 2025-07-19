@@ -28,7 +28,7 @@
     }
 
     h2 {
-      color: #d60000; /* Rot für Kapitelüberschriften */
+      color: #d60000;
       margin-top: 40px;
     }
 
@@ -57,6 +57,19 @@
       margin: 20px 0;
     }
 
+    footer {
+      font-size: 0.8em;
+      padding: 15px;
+      text-align: center;
+      background-color: #f1f1f1;
+    }
+
+    footer a {
+      text-decoration: none;
+      color: #333;
+      margin: 0 10px;
+    }
+
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -69,6 +82,12 @@
       h2, h3 {
         font-size: 1.2em;
       }
+
+      .header-image {
+        max-height: 220px;
+        object-fit: cover;
+        object-position: center top;
+      }
     }
   </style>
 </head>
@@ -77,145 +96,141 @@
 
   <!-- Bannerbild -->
   <header>
-    <img src="Banner2_Webseite.png" alt="Banner Talentförderung Marius Bauer">
+    <img src="Banner2_Webseite.png" alt="Banner Talentförderung Marius Bauer" class="header-image">
   </header>
 
-  <script>
-    function toggleMenu() {
-      const nav = document.getElementById("navLinks");
-      nav.classList.toggle("show");
-    }
-  </script>
-  
+  <!-- Einstieg -->
+  <section class="container">
+    <h3>Du kämpfst mit NTG oder HQ?</h3>
+    <p>Du fühlst dich überfordert vom Lernstoff und dem Prüfungsdruck?<br>
+    Du weißt nicht, wie du dich gezielt vorbereiten sollst?</p>
+    <p><strong>❗ Keine Sorge – genau dafür bin ich da.</strong></p>
+    <p>Ich unterstütze dich dabei, dich optimal auf deine <strong>NTG- und HQ-Prüfungen</strong> vorzubereiten – mit System, Erfahrung und viel Geduld.</p>
+  </section>
 
-    <!-- Einstieg -->
-    <section>
-      <h3>Du kämpfst mit NTG oder HQ?</h3>
-      <p>Du fühlst dich überfordert vom Lernstoff und dem Prüfungsdruck?<br>
-      Du weißt nicht, wie du dich gezielt vorbereiten sollst?</p>
-      <p><strong>❗ Keine Sorge – genau dafür bin ich da.</strong></p>
-      <p>Ich unterstütze dich dabei, dich optimal auf deine <strong>NTG- und HQ-Prüfungen</strong> vorzubereiten – mit System, Erfahrung und viel Geduld.</p>
-    </section>
+  <!-- Was dich erwartet -->
+  <section class="container">
+    <h2>Was dich erwartet</h2>
+    <ul>
+      <li>✅ Individueller Unterricht via Zoom – angepasst an dein Lerntempo</li>
+      <li>✅ Fokus auf NTG & HQ – inkl. mündlicher Ergänzungsprüfung</li>
+      <li>✅ Durchdachter didaktischer Aufbau mit Alltagsbezug</li>
+      <li>✅ Persönlich kuratierte Playlist mit über <strong>60 Stunden Lernvideos</strong></li>
+      <li>✅ Ergänzendes Lernen unterwegs mit meinem <strong>Spotify-Podcast</strong></li>
+      <li>✅ Kein Frontalunterricht – du bringst deine Fragen mit, <strong>wir lösen sie gemeinsam</strong></li>
+    </ul>
+  </section>
 
-    <!-- Was dich erwartet -->
-    <section>
-      <h2>Was dich erwartet</h2>
-      <ul>
-        <li>✅ Individueller Unterricht via Zoom – angepasst an dein Lerntempo</li>
-        <li>✅ Fokus auf NTG & HQ – inkl. mündlicher Ergänzungsprüfung</li>
-        <li>✅ Durchdachter didaktischer Aufbau mit Alltagsbezug</li>
-        <li>✅ Persönlich kuratierte Playlist mit über <strong>60 Stunden Lernvideos</strong></li>
-        <li>✅ Ergänzendes Lernen unterwegs mit meinem <strong>Spotify-Podcast</strong></li>
-        <li>✅ Kein Frontalunterricht – du bringst deine Fragen mit, <strong>wir lösen sie gemeinsam</strong></li>
-      </ul>
-    </section>
+  <!-- Unterrichtszeiten -->
+  <section class="container">
+    <h2>Unterrichtszeiten</h2>
+    <p>Viele fragen mich, wann und wie man Unterricht bei mir buchen kann.</p>
+    <p><strong>Die ehrliche Antwort:</strong> Ich bin fast immer ausgebucht – vor allem, weil ich unter der Woche an meiner Doktorarbeit schreibe.</p>
 
-    <!-- Unterrichtszeiten -->
-    <section>
-      <h2>Unterrichtszeiten</h2>
-      <p>Viele fragen mich, wann und wie man Unterricht bei mir buchen kann.</p>
-      <p><strong>Die ehrliche Antwort:</strong> Ich bin fast immer ausgebucht – vor allem, weil ich unter der Woche an meiner Doktorarbeit schreibe.</p>
+    <h3>📌 Wochenend-Unterricht</h3>
+    <ul>
+      <li>✅ <strong>Samstag und Sonntag jeweils ein Unterrichtsslot</strong></li>
+      <li>⏱️ <strong>Dauer:</strong> 2 Schulstunden (90 Minuten)</li>
+      <li>📍 <strong>Format:</strong> Zoom-Unterricht – individuell, praxisnah und auf deine Fragen zugeschnitten</li>
+      <li>🎯 <strong>Ziel:</strong> Verstehen, anwenden, gezielt vorbereiten – statt stundenlangem Durchkauen</li>
+    </ul>
 
-      <h3>📌 Wochenend-Unterricht</h3>
-      <ul>
-        <li>✅ <strong>Samstag und Sonntag jeweils ein Unterrichtsslot</strong></li>
-        <li>⏱️ <strong>Dauer:</strong> 2 Schulstunden (90 Minuten)</li>
-        <li>📍 <strong>Format:</strong> Zoom-Unterricht – individuell, praxisnah und auf deine Fragen zugeschnitten</li>
-        <li>🎯 <strong>Ziel:</strong> Verstehen, anwenden, gezielt vorbereiten – statt stundenlangem Durchkauen</li>
-      </ul>
-
-      <h3>🆕 NEU: Mittwoch – <strong>Telefon-Coaching</strong></h3>
-      <ul>
-        <li>✅ <strong>Mittwochabend – 1 Schulstunde (45 Minuten)</strong></li>
-        <li>📍 <strong>Format:</strong> Telefonat (kein Videocall, kein Aufgabenrechnen)</li>
-        <li>🧭 <strong>Inhalte:</strong>
-          <ul>
-            <li>Welche Lernvideos bringen dich jetzt wirklich weiter?</li>
-            <li>Wo stehst du gerade – und was ist dein nächster sinnvoller Schritt?</li>
-            <li>Wie bleibst du motiviert und behältst die Freude am Lernen?</li>
-          </ul>
-        </li>
-      </ul>
-      <p><em>Das <strong>Telefon-Coaching</strong> ist kein klassischer Unterricht, sondern ein persönlicher Begleiter für deinen Lernprozess. Ideal, um fokussiert zu bleiben – mit System, Klarheit und menschlichem Austausch.</em></p>
-    </section>
-
-    <!-- Über mich & Logo -->
-    <section>
-      <h2>Über mich & Logo</h2>
-      <p>Ich bin <strong>Marius Bauer</strong>, 31 Jahre alt, habe <strong>Physik, Maschinenbau und Energietechnik</strong> in insgesamt 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich <strong>Wasserstofftechnologien</strong>.</p>
-      <p>Ich unterrichte seit über <strong>15 Jahren</strong> und habe allein in den letzten drei Jahren über <strong>80 angehende Industriemeister</strong> (Metall, Elektro, Logistik) erfolgreich auf ihre Prüfungen vorbereitet – viele davon im allerletzten Versuch.</p>
-
-      <div class="highlight">
-        <p><strong>Mein Logo</strong> steht sinnbildlich für die drei großen Säulen meiner akademischen Ausbildung:</p>
+    <h3>🆕 NEU: Mittwoch – <strong>Telefon-Coaching</strong></h3>
+    <ul>
+      <li>✅ <strong>Mittwochabend – 1 Schulstunde (45 Minuten)</strong></li>
+      <li>📍 <strong>Format:</strong> Telefonat (kein Videocall, kein Aufgabenrechnen)</li>
+      <li>🧭 <strong>Inhalte:</strong>
         <ul>
-          <li><strong>Das Zentrum:</strong> Ein großes Zahnrad treibt über drei kleinere Zahnräder ein Hohlrad an – ein <em>Planetenradgetriebe</em> als Symbol für mein Maschinenbaustudium (B.Eng., Hochschule Aalen).</li>
-          <li><strong>Darum kreisen Elektronen:</strong> Die Atomhülle steht für mein Physikstudium (B.Sc., FAU Erlangen-Nürnberg).</li>
-          <li><strong>In der Hülle:</strong> Drei Schaufeln einer Turbomaschine fördern ein blaues Fluid – Sinnbild für meinen Master in Energietechnik mit Schwerpunkt Verfahrenstechnik (M.Sc., FAU Erlangen-Nürnberg, 2021).</li>
+          <li>Welche Lernvideos bringen dich jetzt wirklich weiter?</li>
+          <li>Wo stehst du gerade – und was ist dein nächster sinnvoller Schritt?</li>
+          <li>Wie bleibst du motiviert und behältst die Freude am Lernen?</li>
         </ul>
-        <p>Derzeit promoviere ich im Fachbereich <strong>Chemie- und Bioingenieurwesen</strong> mit dem Schwerpunkt <strong>Wasserstofftechnologien</strong> – einer zukunftsweisenden Schnittstelle aus Technik, Nachhaltigkeit und Energie.</p>
-      </div>
-    </section>
+      </li>
+    </ul>
+    <p><em>Das <strong>Telefon-Coaching</strong> ist kein klassischer Unterricht, sondern ein persönlicher Begleiter für deinen Lernprozess. Ideal, um fokussiert zu bleiben – mit System, Klarheit und menschlichem Austausch.</em></p>
+  </section>
 
-    <!-- Konditionen -->
-    <section>
-      <h2>Konditionen</h2>
+  <!-- Über mich & Logo -->
+  <section class="container">
+    <h2>Über mich & Logo</h2>
+    <p>Ich bin <strong>Marius Bauer</strong>, 31 Jahre alt, habe <strong>Physik, Maschinenbau und Energietechnik</strong> in insgesamt 18 Semestern mit Bestnoten studiert und promoviere aktuell im Bereich <strong>Wasserstofftechnologien</strong>.</p>
+    <p>Ich unterrichte seit über <strong>15 Jahren</strong> und habe allein in den letzten drei Jahren über <strong>80 angehende Industriemeister</strong> (Metall, Elektro, Logistik) erfolgreich auf ihre Prüfungen vorbereitet – viele davon im allerletzten Versuch.</p>
+
+    <div class="highlight">
+      <p><strong>Mein Logo</strong> steht sinnbildlich für die drei großen Säulen meiner akademischen Ausbildung:</p>
       <ul>
-        <li>✅ <strong>Gruppenunterricht:</strong> 40 € / 45 Min pro Person</li>
-        <li>✅ <strong>Einzelunterricht:</strong> 50 € / 45 Min</li>
-        <li>➕ <strong>Der Unterricht ist steuerlich absetzbar</strong></li>
-        <li>➕ <strong>Keine Vertragsbindung</strong>, volle Flexibilität, faire Abrechnung</li>
+        <li><strong>Das Zentrum:</strong> Ein großes Zahnrad treibt über drei kleinere Zahnräder ein Hohlrad an – ein <em>Planetenradgetriebe</em> als Symbol für mein Maschinenbaustudium (B.Eng., Hochschule Aalen).</li>
+        <li><strong>Darum kreisen Elektronen:</strong> Die Atomhülle steht für mein Physikstudium (B.Sc., FAU Erlangen-Nürnberg).</li>
+        <li><strong>In der Hülle:</strong> Drei Schaufeln einer Turbomaschine fördern ein blaues Fluid – Sinnbild für meinen Master in Energietechnik mit Schwerpunkt Verfahrenstechnik (M.Sc., FAU Erlangen-Nürnberg, 2021).</li>
       </ul>
-    </section>
+      <p>Derzeit promoviere ich im Fachbereich <strong>Chemie- und Bioingenieurwesen</strong> mit dem Schwerpunkt <strong>Wasserstofftechnologien</strong> – einer zukunftsweisenden Schnittstelle aus Technik, Nachhaltigkeit und Energie.</p>
+    </div>
+  </section>
 
+  <!-- Konditionen -->
+  <section class="container">
+    <h2>Konditionen</h2>
+    <ul>
+      <li>✅ <strong>Gruppenunterricht:</strong> 40 € / 45 Min pro Person</li>
+      <li>✅ <strong>Einzelunterricht:</strong> 50 € / 45 Min</li>
+      <li>➕ <strong>Der Unterricht ist steuerlich absetzbar</strong></li>
+      <li>➕ <strong>Keine Vertragsbindung</strong>, volle Flexibilität, faire Abrechnung</li>
+    </ul>
+  </section>
 
-  <section id="buchung">
-  <h2>📅 Buchungskalender</h2>
-  <p>
-    Hier kannst du direkt einen Termin für deinen Unterricht bei mir buchen. Aktuell buchbar:
-    <strong>Samstag & Sonntag, 7:30 – 9:00 Uhr (Vormittags !!!) </strong>. <br>
-  </p>
+  <!-- Buchungskalender -->
+  <section id="buchung" class="container">
+    <h2>📅 Buchungskalender</h2>
+    <p>
+      Hier kannst du direkt einen Termin für deinen Unterricht bei mir buchen. Aktuell buchbar:
+      <strong>Samstag & Sonntag, 7:30 – 9:00 Uhr (Vormittags !!!)</strong>.
+    </p>
 
-  <iframe 
-    src="https://cal.com/talentmb/unterricht" 
-    style="width: 100%; height: 700px; border: none;" 
-    title="Buchungskalender">
-  </iframe>
+    <iframe 
+      src="https://cal.com/talentmb/unterricht" 
+      style="width: 100%; height: 700px; border: none;" 
+      title="Buchungskalender">
+    </iframe>
 
-  <p>Bei Fragen oder Problemen kannst du mir jederzeit schreiben:  
-    <strong>info@TalentMB.de</strong>
-  </p>
-</section>
+    <p>Bei Fragen oder Problemen kannst du mir jederzeit schreiben:  
+      <strong>info@TalentMB.de</strong>
+    </p>
+  </section>
 
-<section id="datenschutz" style="background-color: #f1f1f1; padding: 10px; font-size: 0.55em;">
-  <h2 style="font-size: 1.0em;">Datenschutzerklärung</h2>
-  <p>Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Website erhebt keine personenbezogenen Daten über Cookies oder Tracking.</p>
-  <p>Wenn du mir per E-Mail schreibst oder einen Termin buchst, werden deine Angaben (Name, E-Mail-Adresse, Telefonnummer, Anschrift, Nachricht) zur Bearbeitung deiner Anfrage gespeichert. Diese Daten werden nicht an Dritte weitergegeben.</p>
-  <p><strong>Terminbuchung über Cal.com:</strong>  
-  Für die Terminbuchung nutze ich den Dienst <a href="https://cal.com" target="_blank">Cal.com</a>. Dabei werden personenbezogene Daten wie Name, E-Mail-Adresse, Telefonnummer und Anschrift erfasst.  
-  Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Terminverwaltung).  
-  Cal.com verarbeitet diese Daten in meinem Auftrag gemäß Art. 28 DSGVO. Mehr Informationen findest du unter  
-  <a href="https://cal.com/privacy" target="_blank">cal.com/privacy</a>.</p>
-  <p>Verantwortlich für den Datenschutz:<br>
-  Marius Bauer<br>
-</section>
-<section id="impressum" style="background-color: #f1f1f1; padding: 10px; font-size: 0.55em;">
-  <h2 style="font-size: 1.0em;">Impressum</h2>
-  <p><strong>Angaben gemäß § 18 Abs. 2 MStV</strong></p>
-  <p>
-    Anbieter dieser Internetseite:<br>
+  <!-- Datenschutz -->
+  <section id="datenschutz" style="background-color: #f1f1f1; padding: 10px; font-size: 0.55em;">
+    <h2 style="font-size: 1.0em;">Datenschutzerklärung</h2>
+    <p>Der Schutz deiner persönlichen Daten ist mir wichtig. Diese Website erhebt keine personenbezogenen Daten über Cookies oder Tracking.</p>
+    <p>Wenn du mir per E-Mail schreibst oder einen Termin buchst, werden deine Angaben (Name, E-Mail-Adresse, Telefonnummer, Anschrift, Nachricht) zur Bearbeitung deiner Anfrage gespeichert. Diese Daten werden nicht an Dritte weitergegeben.</p>
+    <p><strong>Terminbuchung über Cal.com:</strong>  
+    Für die Terminbuchung nutze ich den Dienst <a href="https://cal.com" target="_blank">Cal.com</a>. Dabei werden personenbezogene Daten wie Name, E-Mail-Adresse, Telefonnummer und Anschrift erfasst.  
+    Die Datenverarbeitung erfolgt auf Grundlage von Art. 6 Abs. 1 lit. b DSGVO (Vertragserfüllung) bzw. Art. 6 Abs. 1 lit. f DSGVO (berechtigtes Interesse an einer effizienten Terminverwaltung).  
+    Cal.com verarbeitet diese Daten in meinem Auftrag gemäß Art. 28 DSGVO. Mehr Informationen findest du unter  
+    <a href="https://cal.com/privacy" target="_blank">cal.com/privacy</a>.</p>
+    <p>Verantwortlich für den Datenschutz:<br>
     Marius Bauer<br>
-    Brübelgasse 8<br>
-    74532 Ilshofen<br>
-    Telefon: 0176 34481408<br>
-    E-Mail: info@TalentMB.de
-  </p>
-</section>
+  </section>
+
+  <!-- Impressum -->
+  <section id="impressum" style="background-color: #f1f1f1; padding: 10px; font-size: 0.55em;">
+    <h2 style="font-size: 1.0em;">Impressum</h2>
+    <p><strong>Angaben gemäß § 18 Abs. 2 MStV</strong></p>
+    <p>
+      Anbieter dieser Internetseite:<br>
+      Marius Bauer<br>
+      Brübelgasse 8<br>
+      74532 Ilshofen<br>
+      Telefon: 0176 34481408<br>
+      E-Mail: info@TalentMB.de
+    </p>
+  </section>
+
+  <!-- Footer -->
   <footer>
     &copy; 2025 Marius Bauer – TalentMB.de |
     <a href="#impressum">Impressum</a> |
     <a href="#datenschutz">Datenschutz</a>
   </footer>
 
-  
 </body>
 </html>
