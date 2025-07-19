@@ -97,26 +97,6 @@
       border-radius: 10px;
     }
 
-    .carousel-button {
-      position: absolute;
-      top: 50%;
-      transform: translateY(-50%);
-      background-color: rgba(255, 255, 255, 0.8);
-      border: none;
-      font-size: 2rem;
-      cursor: pointer;
-      padding: 0 12px;
-      z-index: 10;
-    }
-
-    .carousel-button.prev {
-      left: 10px;
-    }
-
-    .carousel-button.next {
-      right: 10px;
-    }
-
     @media (max-width: 600px) {
       body {
         font-size: 16px;
@@ -153,13 +133,11 @@
   <div class="container">
     <!-- Karussell -->
     <div class="carousel-container">
-      <button class="carousel-button prev" onclick="moveSlide(-1)">‹</button>
       <div class="carousel-slide" id="carouselSlide">
         <img src="Bestehen mit Toni Chemie, Statistik, Strom.png" alt="Bestehen mit Toni">
         <img src="Optimale bestellmenge.png" alt="Optimale Bestellmenge">
         <img src="Tim SI-Einheiten.png" alt="SI-Einheiten">
       </div>
-      <button class="carousel-button next" onclick="moveSlide(1)">›</button>
     </div>
 
     <!-- Was dich erwartet -->
